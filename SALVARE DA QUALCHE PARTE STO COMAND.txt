@@ -1,0 +1,5 @@
+# comando per aggignere al $PATH il percorso dove trovare l'eseguibile di blastn
+export PATH=$PATH:$HOME/ncbi-blast-2.12.0+/bin
+
+blastn  -query bin/primer.fasta  -db my_reference  -task blastn-short -outfmt "6 std qlen slen" -out bin/my_reference_output2
+
